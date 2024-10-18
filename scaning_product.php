@@ -50,9 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['barcode'])) {
             echo "<p><strong>Product ID:</strong> " . $row['product_id'] . "</p>";
             echo "<p><strong>Status:</strong> " . $row['status'] . "</p>";
             echo "<p><strong>Quantity:</strong> " . $row['quantity'] . "</p>";
-            echo "<p><strong>Expiration Date:</strong> " . $row['expiration_date'] . "</p>";
-            echo "<p><strong>Location:</strong> " . $row['location'] . "</p>";
-            echo "<p><strong>Price:</strong> $" . number_format($row['price'], 2) . "</p>";
         } else {
             echo "<p>No product found for this barcode in your store.</p>";
         }
